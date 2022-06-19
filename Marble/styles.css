@@ -55,6 +55,12 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  position: fixed;
+  width: 100vw;
+  mix-blend-mode: difference;
+  top: 0;
+  z-index: 10;
+  left: 0;
   padding: 3rem;
 }
 
@@ -151,7 +157,7 @@ section.main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 80vh;
+  height: 100vh;
 }
 
 section.main h1 {
@@ -623,6 +629,7 @@ section.three .row .column .ss {
 }
 
 section.four {
+  scroll-snap-align: end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,6 +667,9 @@ section.four .column h5 {
 
 section.four .column .form-grp {
   padding-bottom: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-bottom: 2px solid grey;
 }
 
@@ -683,6 +693,8 @@ section.four .column input {
   border: none;
   font-family: 'Source';
   color: white;
+  outline: none;
+  z-index: -1;
 }
 
 form .btn {

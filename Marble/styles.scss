@@ -47,6 +47,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: fixed;
+    width: 100vw;
+    mix-blend-mode: difference;
+    top: 0;
+    z-index: 10;
+    left: 0;
     a {
         min-width: fit-content;
         text-decoration: none;
@@ -131,7 +137,7 @@ section.main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 80vh;
+    height:100vh;
     h1 {
         max-width: 90%;
         margin-bottom: 1rem;
@@ -475,7 +481,7 @@ section.three{
 }
 
 section.four{
-    // scroll-snap-align: start;
+    scroll-snap-align: end;
     display: flex;
     flex-direction: column;
         padding:0rem;
@@ -494,6 +500,7 @@ section.four{
         }
         .form-grp{
             padding-bottom: 0.5rem;
+            width: fit-content;
             border-bottom:2px solid grey;
         }
         .checkbox{
@@ -513,6 +520,8 @@ section.four{
             border:none;
             font-family: 'Source';
             color:white;
+            outline:none;
+            z-index: -1;
         }
         
     }
